@@ -21,6 +21,7 @@ body{
   font-size: 16px;
   line-height: 1.45em;
   color: $headline-color;
+  background: #fff;
 }
 
 a{
@@ -88,6 +89,11 @@ code{
   .nav-pills > .active > a, .nav-pills > .active > a:hover {
     background-color: $hoodie-blue;
   }
+}
+
+.toTop {
+	margin-bottom: 2em;
+	display: block;
 }
 
 .container{
