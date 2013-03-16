@@ -1,9 +1,24 @@
 (function($){
 	
 	// Top Link
-	if ($(window).width() < 480 ) {
-		$('.container > section').append('<a href="#page" class="toTop">top</a>');
+	function topLink() {
+		
+		var reset = $('.toTop').remove();
+		var selector = '.container > section';
+		
+		if ($(window).width() < 480 ) {
+			reset;
+			$(selector).append('<a href="#page" class="toTop">top</a>');
+			
+		} else {
+			reset;
+		}
 	}
+	
+	topLink();
+	$(window).resize(function() {
+		topLink();
+	});
 	
 	// Smooth Scrolling
 	$(window).load(function(){
